@@ -1,0 +1,43 @@
+2025-03-31 18:57:48,Cell Seeding,🧫 Vessel type: 96-well
+🧬 Cells per well: 5,000
+📦 Cell suspension concentration: 150.00 cells/mL
+
+💧 Volume per well: 33,333.33 µL
+🧪 Total volume needed (with 10% overage): 1,466,666.67 µL
+
+⚠️ WARNING: 33,333.33 µL exceeds the recommended max volume for 96 (200 µL).
+👉 Consider concentrating your cells or using a larger format.
+
+2025-03-31 20:27:37,Smart Cell Seeding,🧫 Vessel type: 12-well
+🧬 Cells per well: 5,000
+📦 Cell concentration: 1,500.00 cells/mL
+🧪 Volume per well: 1000 µL
+🔢 Number of wells: 12
+🧪 Total volume needed (with 10% overage): 13.20 mL
+
+🔬 Add 40.00 mL of cell suspension
+➕ Mix with -26800.00 µL of fresh media
+
+2025-03-31 20:28:31,Smart Cell Seeding,🧫 Vessel type: 12-well
+🧬 Cells per well: 5,000
+📦 Cell concentration: 15,000.00 cells/mL
+🧪 Volume per well: 1000 µL
+🔢 Number of wells: 12
+🧪 Total volume needed (with 10% overage): 13.20 mL
+
+🔬 Add 4.00 mL of cell suspension
+➕ Mix with 9.20 mL of fresh media
+
+📅 2025-03-31 21:07:09
+Total reactions (with overage): 11.0
+Final mix volume: 110.00 µL
+
+🧪 Reagent1: 11.00 µL (1.00 µL/reaction)
+🧪 Reagent2: 11.00 µL (1.00 µL/reaction)
+🧪 Reagent3: 11.00 µL (1.00 µL/reaction)
+🧪 Reagent4: 11.00 µL (1.00 µL/reaction)
+🧪 Reagent5: 11.00 µL (1.00 µL/reaction)
+💧 Nuclease-Free Water: 55.00 µL
+
+✅ Ready to prepare your master mix.
+

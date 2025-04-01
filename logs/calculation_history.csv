@@ -7,3 +7,20 @@ Cell suspension concentration: 2.00e+03 cells/mL
 Volume per well: 48.00 킠
 Total volume needed (with 10.0% overage): 1056.00 킠
 
+2025-03-31 18:32:12,Dilution,Use 1.00e+00 mL of stock and add 9.00e+00 mL of diluent.
+2025-03-31 18:33:12,Cell Seeding,Vessel type: 96
+Cells per well: 5.00e+03
+Cell suspension concentration: 1.20e+03 cells/mL
+Volume per well: 4166.67 킠
+Total volume needed (with 10% overage): 183333.33 킠
+WARNING: 4166.67 킠 exceeds typical max volume for 96 (200 킠).
+Consider concentrating your cells or using a larger format.
+
+2025-03-31 18:45:59,Cell Seeding,Vessel type: 96
+Cells per well: 5.00e+03
+Cell suspension concentration: 1.20e+02 cells/mL
+Volume per well: 41666.67 킠
+Total volume needed (with 10% overage): 4400000.00 킠
+WARNING: 41666.67 킠 exceeds typical max volume for 96 (200 킠).
+Consider concentrating your cells or using a larger format.
+
