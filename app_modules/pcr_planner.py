@@ -1,9 +1,14 @@
 
 import streamlit as st
 from datetime import datetime
+from app_modules.learn_pcr import render_learn_pcr_flashcards
 
 def render_pcr_tab():
     st.subheader("🧪 Advanced PCR/qPCR Mix Planner")
+
+    if st.toggle("📚 Learn PCR / qPCR"):
+        render_learn_pcr_flashcards()
+        st.markdown("---")
 
     st.markdown("Add your reagents, enter stock/final concentrations, and get your master mix.")
 
@@ -58,7 +63,6 @@ def render_pcr_tab():
             result = "\n".join(result_lines)
             st.success(result)
 
-            # Auto-save to log
             with open("logs/calculation_history.txt", "a", encoding="utf-8") as log:
                 log.write(result + "\n\n")
 

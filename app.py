@@ -1,21 +1,29 @@
-
 import streamlit as st
 from src.cell_seeding_calculator import calculate_seeding
 from app_modules import pcr_planner
 from app_modules.rna_cdna_dilution import render_rna_cdna_tab
 from app_modules.dilution import dilution_calc
 from app_modules.molarity_mass import calculate_mass, calculate_concentration
+from app_modules.plate_layout_helper import render_plate_layout_tab
+from app_modules.reagent_buffer_tool import render_reagent_buffer_tab
+from app_modules.spectro_od_tools import render_spectro_od_tab
+from app_modules.experiment_timer import render_timer_tab
 
 st.set_page_config(page_title="Silly Goose Lab Assistant", layout="centered")
 
 st.title("🧪 Silly Goose Lab Assistant")
 
+# Tabs
 tabs = st.tabs([
     "⚖️ Molarity ⇌ Mass",
     "🔁 Dilution Calculator",
-    "🧫 Cell Seeding",
-    "🧬 RNA → cDNA Dilution",
-    "🧪 PCR Mix Planner"
+    "🧺 Cell Seeding",
+    "🦠 RNA → cDNA Dilution",
+    "🧪 PCR Mix Planner",
+    "🌍 Plate Layout Helper",
+    "🪧 Buffer & Reagent Prep",
+    "🔢 Spectro/OD",
+    "⏲️ Timer"
 ])
 
 # ------------------------- MOLARITY MASS ------------------------
@@ -126,3 +134,19 @@ with tabs[3]:
 # ------------------------- PCR PLANNER --------------------------
 with tabs[4]:
     pcr_planner.render_pcr_tab()
+
+# ------------------------- PLATE LAYOUT --------------------------
+with tabs[5]:
+    render_plate_layout_tab()
+
+# ------------------------- BUFFER PREP ---------------------------
+with tabs[6]:
+    render_reagent_buffer_tab()
+
+# ------------------------- OD & SPECTRO --------------------------
+with tabs[7]:
+    render_spectro_od_tab()
+
+# ------------------------- TIMER --------------------------
+with tabs[8]:
+    render_timer_tab()
