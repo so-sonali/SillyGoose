@@ -35,20 +35,21 @@ def calculate_smart_seeding(cells_per_well, plate_type, num_wells, cell_concentr
     max_vol = plate_specs[plate_type]["max_vol"]
 
     result = (
-        f"🧫 Vessel type: {plate_type}-well\n"
-        f"🧬 Cells per well: {cells_per_well:,.0f}\n"
-        f"📦 Cell concentration: {cell_concentration:,.2f} cells/mL\n"
-        f"🧪 Volume per well: {user_volume_per_well:.0f} µL\n"
-        f"🔢 Number of wells: {num_wells}\n"
-        f"🧪 Total volume needed (with {overage_percent}% overage): {format_volume(total_volume_uL)}\n\n"
-        f"🔬 Add {format_volume(volume_of_cells_uL)} of cell suspension\n"
-        f"➕ Mix with {format_volume(media_volume_uL)} of fresh media\n"
-    )
+    f"Vessel type: {plate_type}-well\n"
+    f"Cells per well: {cells_per_well:,.0f}\n"
+    f"Cell concentration: {cell_concentration:,.2f} cells/mL\n"
+    f"Volume per well: {user_volume_per_well:.0f} µL\n"
+    f"Number of wells: {num_wells}\n"
+    f"Total volume needed (with {overage_percent}% overage): {format_volume(total_volume_uL)}\n\n"
+    f"Add {format_volume(volume_of_cells_uL)} of cell suspension\n"
+    f"Mix with {format_volume(media_volume_uL)} of fresh media\n"
+)
+
 
     if user_volume_per_well > max_vol:
         result += (
-            f"\n⚠️ WARNING: {user_volume_per_well:.0f} µL exceeds recommended max per well ({max_vol} µL)\n"
-            f"👉 Consider reducing volume or switching to a larger format."
+            f"\n WARNING: {user_volume_per_well:.0f} µL exceeds recommended max per well ({max_vol} µL)\n"
+            f" Consider reducing volume or switching to a larger format."
         )
 
     #save_log("Smart Cell Seeding", result)
