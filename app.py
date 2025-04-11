@@ -1,5 +1,5 @@
 import streamlit as st
-from src.cell_seeding_calculator import calculate_seeding
+from from app_modules.cell_seeding import calculate_seeding_calculator
 from app_modules import pcr_planner
 from app_modules.rna_cdna_dilution import render_rna_cdna_tab
 from app_modules.dilution import dilution_calc
