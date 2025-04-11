@@ -86,5 +86,5 @@ if __name__ == "__main__":
 
 # Save to a downloadable file
 file_path = Path("/mnt/data/cell_seeding_calculator.py")
-file_path.write_text(clean_seeding_code.strip())
+#file_path.write_text(clean_seeding_code.strip())
 file_path.name
