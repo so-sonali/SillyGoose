@@ -22,7 +22,7 @@ def format_volume(vol_uL):
     else:
         return f"{vol_uL:.2f} µL"
 
-def calculate_smart_seeding(cells_per_well, plate_type, num_wells, cell_concentration, user_volume_per_well, overage_percent=0):
+def cell_seeding_calculator(cells_per_well, plate_type, num_wells, cell_concentration, user_volume_per_well, overage_percent=0):
     if plate_type not in plate_specs:
         raise ValueError("Unsupported plate type.")
 
