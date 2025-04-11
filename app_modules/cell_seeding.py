@@ -51,5 +51,5 @@ def calculate_smart_seeding(cells_per_well, plate_type, num_wells, cell_concentr
             f"👉 Consider reducing volume or switching to a larger format."
         )
 
-    save_log("Smart Cell Seeding", result)
+    #save_log("Smart Cell Seeding", result)
     return result
