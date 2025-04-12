@@ -115,7 +115,7 @@ with tabs[2]:
 
     if submitted:
         try:
-            result = calculate_seeding(
+            result = cell_seeding_calculator(
                 cells_per_well=cells_per_well,
                 plate_type=plate_type,
                 num_wells=num_wells,
